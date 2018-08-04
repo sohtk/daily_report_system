@@ -22,7 +22,7 @@ public class EmployeeValidator {
             errors.add(name_error);
         }
 
-        String password_error = _validatePassword(e.getPassword(),password_check_flag);
+        String password_error = _validatePassword(e.getPassword(), password_check_flag);
         if(!password_error.equals("")) {
             errors.add(password_error);
         }
@@ -31,7 +31,7 @@ public class EmployeeValidator {
     }
 
     private static String _validateCode(String code, Boolean code_duplicate_check_flag) {
-        if(code == null | code.equals("")){
+        if(code == null || code.equals("")) {
             return "社員番号を入力してください。";
         }
         if(code_duplicate_check_flag) {

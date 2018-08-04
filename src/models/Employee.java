@@ -87,8 +87,12 @@ public class Employee {
         return password;
     }
 
-    public void setPasseord(String password) {
+    public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Integer getAdmin_flag() {
+        return admin_flag;
     }
 
     public void setAdmin_flag(Integer admin_flag) {
